@@ -11,7 +11,7 @@
 ** Call "ant help" to get possible build targets.
 **
 -->
-<project name="sumoconvert" default="dist" basedir=".">
+<project name="pointInfo" default="dist" basedir=".">
 
     <!-- enter the SVN commit message -->
     <property name="commit.message" value="Commit message"/>
@@ -24,19 +24,19 @@
 
          See http://josm.openstreetmap.de/wiki/DevelopersGuide/DevelopingPlugins
     -->
-    <property name="plugin.author" value="Ignacio Palermo - Julio Rivera"/>
-    <property name="plugin.class" value="org.openstreetmap.josm.plugins.sumoconvert.SumoConvertPlugin"/>
-    <property name="plugin.description" value="Allows to edit traffic information and export it to the urban mobility simulator SUMO"/>
-    <property name="plugin.icon" value="images/dialogs/logo-sumo.png"/>
+    <property name="plugin.author" value="Marian Kyral"/>
+    <property name="plugin.class" value="org.openstreetmap.josm.plugins.pointinfo.PointInfoPlugin"/>
+    <property name="plugin.description" value="Shows an additional information about point on map"/>
+    <property name="plugin.icon" value="images/mapmode/info-sml.png"/>
     <!-- <property name="plugin.link" value="..."/>-->
     <!--<property name="plugin.early" value="..."/>-->
     <!--<property name="plugin.requires" value="..."/>-->
     <!--<property name="plugin.stage" value="..."/>-->
-    
-	<property name="josm" location="../../core/dist/josm-custom.jar"/>
-	<property name="plugin.dist.dir" value="../../dist"/>
-	
+
+    <property name="josm" location="../../core/dist/josm-custom.jar"/>
+    <property name="plugin.dist.dir" value="../../dist"/>
+
     <!-- ** include targets that all plugins have in common ** -->
     <import file="../build-common.xml"/>
-  
+
 </project>
